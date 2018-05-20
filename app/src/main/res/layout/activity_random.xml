@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroud2"
+    tools:context="com.example.vittunyutamaeprasart.whatyoueat.RandomActivity">
+
+    <TextView
+        android:id="@+id/food4_text"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/white"
+        android:fontFamily="sans-serif-smallcaps"
+        android:gravity="center"
+        android:shadowColor="@color/text_shadow_white"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="2"
+        android:text="Chinken Salad"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/food4" />
+
+    <TextView
+        android:id="@+id/food2_text"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/white"
+        android:fontFamily="sans-serif-smallcaps"
+        android:gravity="center"
+        android:shadowColor="@color/text_shadow_white"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="2"
+        android:text="Fruit Salad"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/food2" />
+
+    <TextView
+        android:id="@+id/food3_text"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/white"
+        android:fontFamily="sans-serif-smallcaps"
+        android:gravity="center"
+        android:shadowColor="@color/text_shadow_white"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="2"
+        android:text="Caesar Salad"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/food3" />
+
+    <ImageButton
+        android:id="@+id/food1"
+        android:layout_width="195dp"
+        android:layout_height="195dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="96dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:onClick="goToStorePage"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/tuna_salad" />
+
+    <ImageButton
+        android:id="@+id/food2"
+        android:layout_width="195dp"
+        android:layout_height="195dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="96dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:onClick="goToStorePage"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/fruit_salad" />
+
+    <ImageButton
+        android:id="@+id/food3"
+        android:layout_width="195dp"
+        android:layout_height="195dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:onClick="goToStorePage"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/food1_text"
+        app:srcCompat="@drawable/caesar_salad" />
+
+    <ImageButton
+        android:id="@+id/food4"
+        android:layout_width="195dp"
+        android:layout_height="195dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:onClick="goToStorePage"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/food2_text"
+        app:srcCompat="@drawable/chicken_satay_salad" />
+
+    <ImageView
+        android:id="@+id/chooseafood"
+        android:layout_width="378dp"
+        android:layout_height="93dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/choose_a_food" />
+
+    <ImageButton
+        android:id="@+id/randomAgainbtn"
+        android:layout_width="321dp"
+        android:layout_height="77dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:onClick="randomAgainButton"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/food3_text"
+        app:srcCompat="@drawable/random_again" />
+
+    <TextView
+        android:id="@+id/food1_text"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/white"
+        android:fontFamily="sans-serif-smallcaps"
+        android:gravity="center"
+        android:shadowColor="@color/text_shadow_white"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="2"
+        android:text="Tuna Salad"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/food1" />
+
+</android.support.constraint.ConstraintLayout>
