@@ -7,59 +7,237 @@
     tools:context="com.example.vittunyutamaeprasart.whatyoueat.MainActivity"
     android:background="@drawable/backgroud3">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World! Main!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.247"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.779" />
-
-    <Button
+    <ImageButton
         android:id="@+id/toRandomPage"
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
+        android:layout_width="175dp"
+        android:layout_height="58dp"
         android:layout_marginBottom="8dp"
-        android:layout_marginStart="200dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="8dp"
+        android:background="?android:attr/selectableItemBackground"
         android:onClick="goToRandomPage"
-        android:text="Go to Random page"
+        android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/whiteBGview"
+        app:srcCompat="@drawable/start"
         tools:ignore="MissingConstraints" />
 
-    <Button
+    <ImageView
+        android:id="@+id/whiteBGview"
+        android:layout_width="385dp"
+        android:layout_height="270dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eat"
+        app:srcCompat="@color/text_shadow_white" />
+
+    <ImageButton
         android:id="@+id/toStorePage"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="172dp"
+        android:layout_height="47dp"
         android:layout_marginBottom="8dp"
         android:layout_marginStart="8dp"
+        android:background="?android:attr/selectableItemBackground"
         android:onClick="goToStorePage"
-        android:text="Go to Store page"
+        android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/stores_list"
         tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/whatyou"
         android:layout_width="399dp"
-        android:layout_height="210dp"
+        android:layout_height="156dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="76dp"
+        android:layout_marginTop="8dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/whatto" />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/eat"
         android:layout_width="382dp"
-        android:layout_height="232dp"
+        android:layout_height="226dp"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="190dp"
+        android:layout_marginTop="96dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/eat" />
+
+    <TextView
+        android:id="@+id/catagoriesText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Catagories"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/whiteBGview"
+        app:layout_constraintTop_toTopOf="@+id/whiteBGview" />
+
+    <CheckBox
+        android:id="@+id/steakCB"
+        android:layout_width="120dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Steak"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/whiteBGview"
+        app:layout_constraintTop_toBottomOf="@+id/catagoriesText" />
+
+    <CheckBox
+        android:id="@+id/noodleCB"
+        android:layout_width="143dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Noodles"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/whiteBGview"
+        app:layout_constraintTop_toBottomOf="@+id/steakCB" />
+
+    <CheckBox
+        android:id="@+id/CookByOrderCB"
+        android:layout_width="143dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Cooked by order"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/whiteBGview"
+        app:layout_constraintTop_toBottomOf="@+id/noodleCB" />
+
+    <TextView
+        android:id="@+id/meatText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="72dp"
+        android:layout_marginTop="8dp"
+        android:text="Meat"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/whiteBGview"
+        app:layout_constraintTop_toTopOf="@+id/whiteBGview" />
+
+    <CheckBox
+        android:id="@+id/porkCB"
+        android:layout_width="96dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="244dp"
+        android:layout_marginTop="8dp"
+        android:text="Pork"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/whiteBGview"
+        app:layout_constraintTop_toBottomOf="@+id/meatText" />
+
+    <CheckBox
+        android:id="@+id/chickenCB"
+        android:layout_width="127dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="244dp"
+        android:layout_marginTop="8dp"
+        android:text="Chicken"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/whiteBGview"
+        app:layout_constraintTop_toBottomOf="@+id/porkCB" />
+
+    <CheckBox
+        android:id="@+id/beefCB"
+        android:layout_width="97dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="244dp"
+        android:layout_marginTop="8dp"
+        android:text="Beef"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/whiteBGview"
+        app:layout_constraintTop_toBottomOf="@+id/chickenCB" />
+
+    <CheckBox
+        android:id="@+id/seaFoodCB"
+        android:layout_width="140dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="244dp"
+        android:layout_marginTop="8dp"
+        android:text="Sea Food"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/whiteBGview"
+        app:layout_constraintTop_toBottomOf="@+id/beefCB" />
+
+    <CheckBox
+        android:id="@+id/noMeatCB"
+        android:layout_width="131dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="244dp"
+        android:layout_marginTop="8dp"
+        android:text="No meat"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/whiteBGview"
+        app:layout_constraintTop_toBottomOf="@+id/seaFoodCB" />
+
+    <TextView
+        android:id="@+id/priceText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:layout_marginStart="8dp"
+        android:text="Price"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/whiteBGview"
+        app:layout_constraintStart_toStartOf="@+id/whiteBGview" />
+
+    <TextView
+        android:id="@+id/lineText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:text="-"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/whiteBGview"
+        app:layout_constraintStart_toEndOf="@+id/startMoneyEditText" />
+
+    <EditText
+        android:id="@+id/startMoneyEditText"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/whiteBGview"
+        app:layout_constraintStart_toEndOf="@+id/priceText"
+        tools:text="baht" />
+
+    <EditText
+        android:id="@+id/endMoneyEditText"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/whiteBGview"
+        app:layout_constraintStart_toEndOf="@+id/lineText"
+        tools:text="baht" />
 
 </android.support.constraint.ConstraintLayout>
