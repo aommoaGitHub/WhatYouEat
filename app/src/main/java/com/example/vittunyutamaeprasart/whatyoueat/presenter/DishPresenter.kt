@@ -18,7 +18,9 @@ class DishPresenter (val view: DishView, val repository: DishRepositoryMock){
 
     fun randomDishes(): ArrayList<Dish> {
         Collections.shuffle(disheslist)
-        return arrayListOf(disheslist.get(0),disheslist.get(1),disheslist.get(2),disheslist.get(3))
+        if (disheslist.size >= 4)
+            return arrayListOf(disheslist.get(0),disheslist.get(1),disheslist.get(2),disheslist.get(3))
+        return disheslist
     }
 
 }

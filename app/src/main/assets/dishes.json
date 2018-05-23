@@ -1,0 +1,117 @@
+[
+    {
+        "name": "Tuna Salad",
+        "category": "others",
+        "meat": "seafood",
+        "photoname": "tuna_salad"
+    },
+    {
+        "name": "Fruit Salad",
+        "category": "others",
+        "meat": "noMeat",
+        "photoname": "fruit_salad"
+    },
+    {
+        "name": "Chicken Salad",
+        "category": "others",
+        "meat": "chicken",
+        "photoname": "chicken_satay_salad"
+    },
+    {
+        "name": "Caesar Salad",
+        "category": "others",
+        "meat": "pork",
+        "photoname": "caesar_salad"
+    },
+    {
+        "name": "Pork Burger",
+        "category": "others",
+        "meat": "pork",
+        "photoname": "pork_burger"
+    },
+    {
+        "name": "Chicken Burger",
+        "category": "others",
+        "meat": "chicken",
+        "photoname": "chicken_burger"
+    },
+    {
+        "name": "Beef Burger",
+        "category": "others",
+        "meat": "beef",
+        "photoname": "beef_burger"
+    },
+    {
+        "name": "Fish Burger",
+        "category": "others",
+        "meat": "seafood",
+        "photoname": "fish_burger"
+    },
+    {
+        "name": "Pasta Primavera",
+        "category": "noodles",
+        "meat": "noMeat",
+        "photoname": "pasta_primavera"
+    },
+    {
+        "name": "Shrimp Pasta",
+        "category": "noodles",
+        "meat": "seafood",
+        "photoname": "shrimp_pasta"
+    },
+    {
+        "name": "Creamy Chicken Enchilada Pasta",
+        "category": "noodles",
+        "meat": "chicken",
+        "photoname": "creamy_chicken_enchilada_pasta"
+    },
+    {
+        "name": "MeatBalls Pasta",
+        "category": "noodles",
+        "meat": "beef",
+        "photoname": "meatballs_pasta"
+    },
+    {
+        "name": "Pork Chops",
+        "category": "steak",
+        "meat": "pork",
+        "photoname": "pork_chops"
+    },
+    {
+        "name": "Beef Steak",
+        "category": "steak",
+        "meat": "beef",
+        "photoname": "beef_steak"
+    },
+    {
+        "name": "Salmon Burger",
+        "category": "others",
+        "meat": "seafood",
+        "photoname": "salmon_burger"
+    },
+    {
+        "name": "Salmon Steak",
+        "category": "steak",
+        "meat": "seafood",
+        "photoname": "salmon_steak"
+    },
+    {
+        "name": "Fried Fish Steak",
+        "category": "steak",
+        "meat": "seafood",
+        "photoname": "fried_fish_steak"
+    },
+    {
+        "name": "Pork Kapao with Rich",
+        "category": "cookedByOrder",
+        "meat": "pork",
+        "photoname": "pork_kapao"
+    },
+    {
+        "name": "Omelet with Rich",
+        "category": "cookedByOrder",
+        "meat": "noMeat",
+        "photoname": "omelet"
+    }
+
+]

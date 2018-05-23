@@ -127,7 +127,7 @@
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@+id/whiteBGview"
-        app:layout_constraintTop_toBottomOf="@+id/CookByOrderCB" />
+        app:layout_constraintTop_toBottomOf="@+id/cookByOrderCB" />
 
     <TextView
         android:id="@+id/meatText"
@@ -230,26 +230,28 @@
 
     <EditText
         android:id="@+id/startMoneyEditText"
-        android:layout_width="60dp"
+        android:layout_width="50dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:layout_marginStart="8dp"
         android:ems="10"
+        android:hint="baht"
         android:inputType="textPersonName"
+        android:text="0"
         app:layout_constraintBottom_toBottomOf="@+id/whiteBGview"
-        app:layout_constraintStart_toEndOf="@+id/priceText"
-        tools:text="baht" />
+        app:layout_constraintStart_toEndOf="@+id/priceText" />
 
     <EditText
         android:id="@+id/endMoneyEditText"
-        android:layout_width="60dp"
+        android:layout_width="50dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:layout_marginStart="8dp"
         android:ems="10"
+        android:hint="baht"
         android:inputType="textPersonName"
+        android:text="100"
         app:layout_constraintBottom_toBottomOf="@+id/whiteBGview"
-        app:layout_constraintStart_toEndOf="@+id/lineText"
-        tools:text="baht" />
+        app:layout_constraintStart_toEndOf="@+id/lineText" />
 
 </android.support.constraint.ConstraintLayout>

@@ -1,10 +1,6 @@
 package com.example.vittunyutamaeprasart.whatyoueat.models
 
-import android.content.Intent
-import android.support.v4.content.ContextCompat.startActivity
-import android.support.v7.app.AppCompatActivity
-import com.example.vittunyutamaeprasart.whatyoueat.RandomActivity
-import java.util.*
+import com.example.vittunyutamaeprasart.whatyoueat.R
 import kotlin.collections.ArrayList
 
 /**
@@ -12,10 +8,6 @@ import kotlin.collections.ArrayList
  */
 class DishRepositoryMock{
 
-    //    fun search(searchTitle: String, searchYear: String): ArrayList<Book> {
-//        return ArrayList()
-//    }
-//
     private var alldisheslist:ArrayList<Dish>
     private val allcategorieslist: ArrayList<String>
     private val allmeatlist: ArrayList<String>
@@ -29,11 +21,12 @@ class DishRepositoryMock{
         selectedDishesList = ArrayList()
         allcategorieslist = arrayListOf("steak","noodles","cookedByOrder","others")
         allmeatlist = arrayListOf("pork","chicken","beef","seafood","noMeat")
-        alldisheslist = arrayListOf(Dish("Tuna Salad", allcategorieslist.get(3), allmeatlist.get(3), "tuna_salad.jpeg"),
-                Dish("Fruit Salad", allcategorieslist.get(3), allmeatlist.get(4), "fruit_salad.jpg"),
-                Dish("Chicken Salad", allcategorieslist.get(3), allmeatlist.get(1), "chicken_salad.jpg"),
-                Dish("Caesar Salad", allcategorieslist.get(3), allmeatlist.get(0), "caesar_salad.jpeg"),
-                Dish("Pork Burger",allcategorieslist.get(3),allmeatlist.get(0),"pork_burger.jpeg"))
+//        alldisheslist = arrayListOf(Dish("Tuna Salad", allcategorieslist.get(3), allmeatlist.get(3), R.drawable.tuna_salad),
+//                Dish("Fruit Salad", allcategorieslist.get(3), allmeatlist.get(4), R.drawable.fruit_salad),
+//                Dish("Chicken Salad", allcategorieslist.get(3), allmeatlist.get(1), R.drawable.chicken_satay_salad),
+//                Dish("Caesar Salad", allcategorieslist.get(3), allmeatlist.get(0), R.drawable.caesar_salad),
+//                Dish("Pork Burger",allcategorieslist.get(3),allmeatlist.get(0),R.drawable.pork_burger))
+        alldisheslist = ArrayList()
     }
 
     private object Holder {
@@ -44,8 +37,8 @@ class DishRepositoryMock{
         val instance: DishRepositoryMock by lazy { Holder.INSTANCE }
     }
 
-    fun getAllDishes(): ArrayList<Dish> {
-        return alldisheslist
+    fun setAllDishes(inalllist: ArrayList<Dish>) {
+        this.alldisheslist = inalllist
     }
 
     fun getFilterDishes(): ArrayList<Dish> {
@@ -58,36 +51,14 @@ class DishRepositoryMock{
         if(selectedCategoryList.size == allcategorieslist.size && selectedMeatList.size == allmeatlist.size)
             selectedDishesList.addAll(alldisheslist)
 
-
         else {
             for (dish in alldisheslist){
                 if(selectedCategoryList.contains(dish.category) && selectedMeatList.contains(dish.meat))
                     selectedDishesList.add(dish)
             }
-
         }
-
     }
 
-//    private fun parseJson(){
-//        val jsonObject = JSONObject(readFile())
-//
-//        val dish = getDishes(jsonObject.getJSONObject("dish"))
-//    }
-//
-//    private fun getDishes(jsonObject: JSONObject) : Dish{
-//        return Dish(
-//                jsonObject.getString("name"),
-//                jsonObject.getString("category"),
-//                jsonObject.getString("meat"),
-//                jsonObject.getString("photoname")
-//        )
-//    }
-//
-//    private fun readFile() : String {
-//        val assetManager = getAssets()
-//        val ims = assetManager.open("helloworld.txt")
-//    }
 
     fun updateSelectedList(categorylist: ArrayList<String>, meatlist: ArrayList<String>){
 
@@ -98,4 +69,8 @@ class DishRepositoryMock{
 
         filterDishes()
     }
+
+
+
+
 }

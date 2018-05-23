@@ -8,18 +8,16 @@ import com.example.vittunyutamaeprasart.whatyoueat.models.StoreRepositoryMock
 /**
  * Created by vittunyutamaeprasart on 22/5/2018 AD.
  */
-class StorePresenter(val currentDish: Dish,
-                     val view: StoreView,
-                     val repository: StoreRepositoryMock){
+class StorePresenter(val view: StoreView){
 
-    val aviableStoreList = ArrayList<Store>()
-
-    fun serarchAviableStores(currentDish: Dish) : ArrayList<Store> {
-        return  ArrayList()
-    }
+//    private val aviableStoreList : ArrayList<Store>
+//
+//    init {
+//        aviableStoreList = ArrayList()
+//    }
 
     fun start(){
-
+        view.setStoresList(StoreRepositoryMock.instance.serarchSuitableStores())
     }
 
 }

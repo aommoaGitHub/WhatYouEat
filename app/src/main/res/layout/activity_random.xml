@@ -7,11 +7,35 @@
     android:background="@drawable/backgroud2"
     tools:context="com.example.vittunyutamaeprasart.whatyoueat.RandomActivity">
 
+    <ImageView
+        android:id="@+id/chooseafood"
+        android:layout_width="378dp"
+        android:layout_height="93dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/choose_a_food" />
+
+    <ImageButton
+        android:id="@+id/food1"
+        android:layout_width="195dp"
+        android:layout_height="195dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="96dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:onClick="goToStorePage"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/tuna_salad" />
+
     <TextView
-        android:id="@+id/food4_text"
+        android:id="@+id/food1_text"
         android:layout_width="195dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:background="@android:color/white"
         android:fontFamily="sans-serif-smallcaps"
@@ -20,13 +44,26 @@
         android:shadowDx="2"
         android:shadowDy="2"
         android:shadowRadius="2"
-        android:text="Chinken Salad"
+        android:text="Tuna Salad"
         android:textAllCaps="false"
         android:textColor="@android:color/black"
         android:textSize="24sp"
         android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/food1" />
+
+    <ImageButton
+        android:id="@+id/food2"
+        android:layout_width="195dp"
+        android:layout_height="195dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="96dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:onClick="goToStorePage"
+        android:scaleType="fitCenter"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/food4" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/fruit_salad" />
 
     <TextView
         android:id="@+id/food2_text"
@@ -48,6 +85,19 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/food2" />
+
+    <ImageButton
+        android:id="@+id/food3"
+        android:layout_width="195dp"
+        android:layout_height="195dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:onClick="goToStorePage"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/food1_text"
+        app:srcCompat="@drawable/caesar_salad" />
 
     <TextView
         android:id="@+id/food3_text"
@@ -71,45 +121,6 @@
         app:layout_constraintTop_toBottomOf="@+id/food3" />
 
     <ImageButton
-        android:id="@+id/food1"
-        android:layout_width="195dp"
-        android:layout_height="195dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="96dp"
-        android:background="?android:attr/selectableItemBackground"
-        android:onClick="goToStorePage"
-        android:scaleType="fitCenter"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/tuna_salad" />
-
-    <ImageButton
-        android:id="@+id/food2"
-        android:layout_width="195dp"
-        android:layout_height="195dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginTop="96dp"
-        android:background="?android:attr/selectableItemBackground"
-        android:onClick="goToStorePage"
-        android:scaleType="fitCenter"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/fruit_salad" />
-
-    <ImageButton
-        android:id="@+id/food3"
-        android:layout_width="195dp"
-        android:layout_height="195dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:background="?android:attr/selectableItemBackground"
-        android:onClick="goToStorePage"
-        android:scaleType="fitCenter"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/food1_text"
-        app:srcCompat="@drawable/caesar_salad" />
-
-    <ImageButton
         android:id="@+id/food4"
         android:layout_width="195dp"
         android:layout_height="195dp"
@@ -122,16 +133,26 @@
         app:layout_constraintTop_toBottomOf="@+id/food2_text"
         app:srcCompat="@drawable/chicken_satay_salad" />
 
-    <ImageView
-        android:id="@+id/chooseafood"
-        android:layout_width="378dp"
-        android:layout_height="93dp"
+    <TextView
+        android:id="@+id/food4_text"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/white"
+        android:fontFamily="sans-serif-smallcaps"
+        android:gravity="center"
+        android:shadowColor="@color/text_shadow_white"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="2"
+        android:text="Chinken Salad"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/choose_a_food" />
+        app:layout_constraintTop_toBottomOf="@+id/food4" />
 
     <ImageButton
         android:id="@+id/randomAgainbtn"
@@ -150,26 +171,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/food3_text"
         app:srcCompat="@drawable/random_again" />
-
-    <TextView
-        android:id="@+id/food1_text"
-        android:layout_width="195dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:background="@android:color/white"
-        android:fontFamily="sans-serif-smallcaps"
-        android:gravity="center"
-        android:shadowColor="@color/text_shadow_white"
-        android:shadowDx="2"
-        android:shadowDy="2"
-        android:shadowRadius="2"
-        android:text="Tuna Salad"
-        android:textAllCaps="false"
-        android:textColor="@android:color/black"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/food1" />
 
 </android.support.constraint.ConstraintLayout>

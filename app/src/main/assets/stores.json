@@ -1,0 +1,16 @@
+[
+    {
+        "name": "Salad Shop",
+        "type": "mini shop",
+        "address": "...",
+        "review": "the best os Salad home made",
+        "periodprice": "65.0",
+        "menunamelist":[
+            {"name": "Tuna Salad"},
+            {"name": "Fruit Salad"},
+            {"name": "Caesar Salad"}
+        ]
+    }
+
+
+]
