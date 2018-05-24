@@ -1,14 +1,76 @@
-[
-    {
-        "name": "Salad Shop",
+[{
+        "name": "Jones' Salad Shop",
         "type": "mini shop",
-        "address": "...",
-        "review": "the best os Salad home made",
+        "address": "เอสพลานาด รัชดา ห้องเลขที่ 2 G18 99ชั้นG ถนนรัชดาภิเษก, Din Daeng, Bangkok 10500",
+        "review": "The best os Salad home made",
         "periodprice": "65.0",
-        "menunamelist":[
-            {"name": "Tuna Salad"},
-            {"name": "Fruit Salad"},
-            {"name": "Caesar Salad"}
+        "menunamelist": [
+            { "name": "Tuna Salad" },
+            { "name": "Fruit Salad" },
+            { "name": "Caesar Salad" },
+            { "name": "Fruit Salad" },
+            { "name": "Chicken Salad" }
+        ]
+    },
+    {
+        "name": "McDonald",
+        "type": "fast food resturant",
+        "address": "Huai Khwang, Bangkok 10310",
+        "review": "Suitable price, the best of burger",
+        "periodprice": "80.0",
+        "menunamelist": [
+            { "name": "Pork Burger" },
+            { "name": "Chicken Burger" },
+            { "name": "Beef Burger" },
+            { "name": "Fish Burger" },
+            { "name": "Salmon Burger" },
+            { "name": "Tuna Salad" }
+        ]
+    },
+    {
+        "name": "Jeffer Steak",
+        "type": "resturant",
+        "address": "131 ชั้น G อาคาร Belle พระราม 9 ซอย 7 พระราม 9 Huai Khwang, Bangkok 10310",
+        "review": "The price is too high compared to amount of food",
+        "periodprice": "120.0",
+        "menunamelist": [
+            { "name": "Pasta Primavera" },
+            { "name": "Shrimp Pasta" },
+            { "name": "Creamy Chicken Enchilada Pasta" },
+            { "name": "Pork Chops" },
+            { "name": "Beef Steak" },
+            { "name": "Salmon Steak" },
+            { "name": "Fried Fish Steak" },
+            { "name": "Omelet with Rich" }
+        ]
+    },
+    {
+        "name": "Pasta De Waraku",
+        "type": "resturant",
+        "address": "L7,717, Centralplaza Grand Rama 9, Ratchadaphisek Rd, Khwaeng Huai Khwang, Din Daeng, Krung Thep Maha Nakhon 10400",
+        "review": "Bunch of kids who don't know service and can't speak English. Our waiter spilled half portion of our calamari in front of us, but smiled a walked away.",
+        "periodprice": "150.0",
+        "menunamelist": [
+            { "name": "Pasta Primavera" },
+            { "name": "Shrimp Pasta" },
+            { "name": "Creamy Chicken Enchilada Pasta" },
+            { "name": "MeatBalls Pasta" },
+            { "name": "Thai Shrimp fried Noodle" }
+        ]
+    },
+    {
+        "name": "ร้านอาหารตามสั่งอร่อย",
+        "type": "resturant",
+        "address": "89/729 ซอย นวมินทร์ 81 นวมินทร์ Nawamin, Bueng Kum, Bangkok 10240",
+        "review": "Delicious available to order home.",
+        "periodprice": "40.0",
+        "menunamelist": [
+            { "name": "Omelet with Rich" },
+            { "name": "Pork Kapao with Rich" },
+            { "name": "Pasta Primavera" },
+            { "name": "Chicken Salad" },
+            { "name": "Tuna Salad" },
+            { "name": "Thai Shrimp fried Noodle" }
         ]
     }
 

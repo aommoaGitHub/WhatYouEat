@@ -1,5 +1,4 @@
-[
-    {
+[{
         "name": "Tuna Salad",
         "category": "others",
         "meat": "seafood",
@@ -112,6 +111,12 @@
         "category": "cookedByOrder",
         "meat": "noMeat",
         "photoname": "omelet"
+    },
+    {
+        "name": "Thai Shrimp fried Noodle",
+        "category": "cookedByOrder",
+        "meat": "seafood",
+        "photoname": "thai_fried_noodle"
     }
 
 ]

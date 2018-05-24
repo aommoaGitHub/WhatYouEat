@@ -10,12 +10,6 @@ import com.example.vittunyutamaeprasart.whatyoueat.models.StoreRepositoryMock
  */
 class StorePresenter(val view: StoreView){
 
-//    private val aviableStoreList : ArrayList<Store>
-//
-//    init {
-//        aviableStoreList = ArrayList()
-//    }
-
     fun start(){
         view.setStoresList(StoreRepositoryMock.instance.serarchSuitableStores())
     }

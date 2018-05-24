@@ -33,14 +33,9 @@ class StoreRepositoryMock {
 
         val suitableStore: ArrayList<Store> = ArrayList()
         for(store in allstores){
-            println(store.periodprice >= priceMin)
-            println(store.periodprice <= priceMax)
-            println(store.menunamelist)
-            println(currentDish.name)
             if(store.periodprice >= priceMin && store.periodprice <= priceMax && store.menunamelist.contains(currentDish.name))
                 suitableStore.add(store)
         }
-        println(">>suitable: "+suitableStore)
         return suitableStore
     }
 

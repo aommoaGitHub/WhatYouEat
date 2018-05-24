@@ -3,9 +3,9 @@ package com.example.vittunyutamaeprasart.whatyoueat
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.WindowManager
-import android.widget.ArrayAdapter
 import com.example.vittunyutamaeprasart.whatyoueat.models.Store
 import com.example.vittunyutamaeprasart.whatyoueat.models.StoreRepositoryMock
+import com.example.vittunyutamaeprasart.whatyoueat.presenter.StoreListAdapter
 import com.example.vittunyutamaeprasart.whatyoueat.presenter.StorePresenter
 import com.example.vittunyutamaeprasart.whatyoueat.presenter.StoreView
 import kotlinx.android.synthetic.main.activity_store.*
@@ -16,8 +16,7 @@ import java.io.InputStreamReader
 
 class StoreActivity : AppCompatActivity() , StoreView {
 
-    var adapter: ArrayAdapter<Store>? = null
-
+    lateinit var adapter: StoreListAdapter
 
     lateinit var presenter : StorePresenter
 
@@ -35,7 +34,7 @@ class StoreActivity : AppCompatActivity() , StoreView {
     }
 
     override fun setStoresList(stores: ArrayList<Store>) {
-        adapter = ArrayAdapter<Store>(this, android.R.layout.simple_list_item_1, stores)
+        adapter = StoreListAdapter(this,stores)
         stores_listview.adapter = adapter
     }
 

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/text_shadow_white"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp">
+
+    <TextView
+        android:id="@+id/storename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Store name"
+        android:textSize="20dp"
+        android:textColor="#00a7f5"/>
+
+    <TextView
+        android:id="@+id/storetype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Type"
+        android:textSize="18dp"
+        android:textColor="#f92a3f"/>
+
+    <TextView
+        android:id="@+id/storeprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price"
+        android:textSize="18dp"
+        android:textColor="#f92a3f"/>
+
+
+    <TextView
+        android:id="@+id/storeaddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Address"
+        android:textSize="16dp"
+        android:textColor="#000"/>
+
+    <TextView
+        android:id="@+id/storereview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Review"
+        android:textSize="16dp"
+        android:textColor="#000"/>
+
+
+</LinearLayout>
