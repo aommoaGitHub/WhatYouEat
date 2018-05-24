@@ -8,12 +8,13 @@ import kotlin.collections.ArrayList
 /**
  * Created by vittunyutamaeprasart on 22/5/2018 AD.
  */
-class DishPresenter (val view: DishView, val repository: DishRepositoryMock){
+class DishPresenter (val view: DishView){
 
     var disheslist: ArrayList<Dish> = ArrayList()
 
     fun start(){
         this.disheslist = DishRepositoryMock.instance.getFilterDishes()
+        view.updateChoices()
     }
 
     fun randomDishes(): ArrayList<Dish> {

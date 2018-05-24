@@ -17,7 +17,6 @@ import kotlinx.android.synthetic.main.activity_random.*
 class RandomActivity : AppCompatActivity(), DishView {
 
     lateinit var presenter : DishPresenter
-    lateinit var repository: DishRepositoryMock
     lateinit var choicebtnlist: ArrayList<ImageButton>
     lateinit var choicenamebtnlist: ArrayList<TextView>
     lateinit var disheslist : ArrayList<Dish>
@@ -31,11 +30,8 @@ class RandomActivity : AppCompatActivity(), DishView {
 
         choicebtnlist = arrayListOf(food1,food2,food3,food4)
         choicenamebtnlist = arrayListOf(food1_text,food2_text,food3_text,food4_text)
-        repository = DishRepositoryMock()
-        presenter = DishPresenter(this,repository)
+        presenter = DishPresenter(this)
         presenter.start()
-
-        updateChoices()
     }
 
     fun goToStorePage(view: View){
