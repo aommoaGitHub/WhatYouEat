@@ -76,6 +76,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun goToStorePage(view: View){
+
         val intent = Intent(this, StoreActivity::class.java)
         startActivity(intent)
     }

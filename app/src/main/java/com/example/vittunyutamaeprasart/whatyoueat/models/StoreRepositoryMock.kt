@@ -5,7 +5,7 @@ package com.example.vittunyutamaeprasart.whatyoueat.models
  */
 class StoreRepositoryMock {
 
-    private lateinit var currentDish: Dish
+    private var currentDish: Dish = Dish("","","",0)
     private var priceMin: Double = 0.0
     private var priceMax: Double = 0.0
     private var allstores: ArrayList<Store> = ArrayList()
@@ -30,6 +30,9 @@ class StoreRepositoryMock {
     fun serarchSuitableStores() : ArrayList<Store>{
         if (allstores.size == 0)
             return ArrayList()
+
+        if (currentDish.name == "")
+            return allstores
 
         val suitableStore: ArrayList<Store> = ArrayList()
         for(store in allstores){
